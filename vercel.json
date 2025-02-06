@@ -1,4 +1,11 @@
 {
+    "redirects": [
+      {
+        "source": "/((?!wiki).*)",
+        "destination": "https://lucas-bonvin.com/$1",
+        "permanent": true
+      }
+    ],
     "rewrites": [
       {
         "source": "/wiki",
@@ -7,13 +14,6 @@
       {
         "source": "/wiki/:path*",
         "destination": "https://publish.obsidian.md/serve?url=luc-b.ch/wiki/:path*"
-      }
-    ],
-    "redirects": [
-      {
-        "source": "/:path((?!wiki).*)",
-        "destination": "https://lucas-bonvin.com/:path",
-        "permanent": true
       }
     ]
   }
