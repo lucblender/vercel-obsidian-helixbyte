@@ -1,19 +1,19 @@
 {
-    "redirects": [
-      {
-        "source": "/((?!wiki).*)",
-        "destination": "https://lucas-bonvin.com/$1",
-        "permanent": true
-      }
-    ],
-    "rewrites": [
-      {
-        "source": "/wiki",
-        "destination": "https://publish.obsidian.md/serve?url=luc-b.ch/wiki"
-      },
-      {
-        "source": "/wiki/:path*",
-        "destination": "https://publish.obsidian.md/serve?url=luc-b.ch/wiki/:path*"
-      }
-    ]
-  }
+  "rewrites": [
+    {
+      "source": "/wiki",
+      "destination": "https://publish.obsidian.md/serve?url=luc-b.ch/wiki"
+    },
+    {
+      "source": "/wiki/:path*",
+      "destination": "https://publish.obsidian.md/serve?url=luc-b.ch/wiki/:path*"
+    }
+  ],
+"redirects": [
+    {
+      "source": "/((?!wiki).*)",
+      "destination": "https://lucas-bonvin.com/$1",
+      "permanent": true
+    }
+  ]
+}
